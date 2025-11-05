@@ -1,2 +1,21 @@
+/* Flex container */
+.holder {
+  display: flex;                /* Enables flexbox */
+  justify-content: space-between; /* Equal space between items */
+  flex-wrap: wrap;              /* Move to next line if overflow */
+  gap: 10px;                    /* Optional small spacing between rows */
+  background-color: #f8f9fa;    /* Light background for visibility */
+  padding: 10px;
+}
 
-/* Your CSS Code here. */
+/* Flex items */
+.item {
+  background-color: #007bff;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  flex: 0 1 150px; /* Prevent squashing, width ~150px */
+}
